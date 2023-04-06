@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Job hunt</title>
-</head>
-<body>
-    <section id="list">
-        <h2>List of the future employees</h2>
-        <section id="whole">
-            <section id="many-offers">
-                <div class="offer">
-                    <p><span>Name: </span>Jan</p>
-                    <p><span>Last name: </span>Kowalski</p>
-                    <p><span>Job title: </span>Nurse</p>
-                    <p><span>Expected salary: </span>$90000</p>
-                </div>
-                <div class="offer">
-                    <p><span>Name: </span>Jane</p>
-                    <p><span>Last name: </span>Doe</p>
-                    <p><span>Job title: </span>Midwife</p>
-                    <p><span>Expected salary: </span>$98000</p>
-                </div>
-                <div class="offer">
-                    <p><span>Name: </span>Gabriela</p>
-                    <p><span>Last name: </span>White</p>
-                    <p><span>Job title: </span>Physical Therapist</p>
-                    <p><span>Expected salary: </span>$87000</p>
-                </div>
-                <div class="offer">
-                    <p><span>Name: </span>Daniel</p>
-                    <p><span>Last name: </span>Ridge</p>
-                    <p><span>Job title: </span>Architect</p>
-                    <p><span>Expected salary: </span>$80000</p>
-                </div>
-                <div class="offer">
-                    <p><span>Name: </span>Veronica</p>
-                    <p><span>Last name: </span>Velazquez</p>
-                    <p><span>Job title: </span>Physician</p>
-                    <p><span>Expected salary: </span>$110000</p>
-                </div>
-                <div class="offer">
-                    <p><span>Name: </span>Henry</p>
-                    <p><span>Last name: </span>Depp</p>
-                    <p><span>Job title: </span>Teacher</p>
-                    <p><span>Expected salary: </span>$57000</p>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Job hunt</title>
+    </head>
+    <body>
+        <section id="list">
+            <h2>List of the future employees</h2>
+            <section id="whole">
+                <section id="many-offers">
+                    <div class="offer">
+                        <p><span>Name: </span>Jan</p>
+                        <p><span>Last name: </span>Kowalski</p>
+                        <p><span>Job title: </span>Nurse</p>
+                        <p><span>Expected salary: </span>$90000</p>
+                    </div>
+                    <div class="offer">
+                        <p><span>Name: </span>Jane</p>
+                        <p><span>Last name: </span>Doe</p>
+                        <p><span>Job title: </span>Midwife</p>
+                        <p><span>Expected salary: </span>$98000</p>
+                    </div>
+                    <div class="offer">
+                        <p><span>Name: </span>Gabriela</p>
+                        <p><span>Last name: </span>White</p>
+                        <p><span>Job title: </span>Physical Therapist</p>
+                        <p><span>Expected salary: </span>$87000</p>
+                    </div>
+                    <div class="offer">
+                        <p><span>Name: </span>Daniel</p>
+                        <p><span>Last name: </span>Ridge</p>
+                        <p><span>Job title: </span>Architect</p>
+                        <p><span>Expected salary: </span>$80000</p>
+                    </div>
+                    <div class="offer">
+                        <p><span>Name: </span>Veronica</p>
+                        <p><span>Last name: </span>Velazquez</p>
+                        <p><span>Job title: </span>Physician</p>
+                        <p><span>Expected salary: </span>$110000</p>
+                    </div>
+                    <div class="offer">
+                        <p><span>Name: </span>Henry</p>
+                        <p><span>Last name: </span>Depp</p>
+                        <p><span>Job title: </span>Teacher</p>
+                        <p><span>Expected salary: </span>$57000</p>
+                    </div>
+                </section>
             </section>
         </section>
-    </section>
-    <section id="form">
-        <div id="right-side">
-            <h3>Add your offer</h3>
-            <div id="fill-in">
-                <form action="">
-                    <label for="fname">Name:</label>
-                    <input type="text" id="fname" name="fname" autocomplete="on"required><br><br>
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname" autocomplete="on" required><br><br>
-                    <label for="job">Job title:</label>
-                    <input type="text" id="job" name="job" autocomplete="on" required><br><br>
-                    <label for="salary">Expected salary in USD:</label>
-                    <input type="number" id="salary" name="salary" required><br><br>
-                    <input type="button" value="Add" id="new">
-                </form>
+        <section id="form"> 
+            <div id="container-message">
+                <p id="message"></p>
             </div>
-        </div>
-    </section>
-<script src="java.js"></script>    
-</body>
+            <div id="right-side">
+                <h3>Add your offer</h3>
+                <div id="fill-in">
+                    <form action="">
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="fname" autocomplete="on" required>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" autocomplete="on" required>
+                        <label for="job">Job title:</label>
+                        <input type="text" id="job" name="job" autocomplete="on" required>
+                        <label for="salary" >Expected annual salary in USD:</label>
+                        <input type="number" id="salary" name="salary" required>
+                        <input type="button" value="Add" id="new">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="java.js"></script>    
+    </body>
 </html>

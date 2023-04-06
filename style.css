@@ -7,7 +7,7 @@ body{
 }
 
 #list{
-    margin: 1rem;
+    margin: 1rem 10rem 1rem 1rem;
     width: 50vw;
     min-height: 90vh;
     border: 1px solid white;
@@ -27,15 +27,14 @@ h2 {
 h3 {
     color: rgb(205, 190, 120);
     margin: auto;
-    width: 30%;
-    padding: 5%;
+    padding: 4%;
 }
 
 .offer{
     margin: 1%;
     padding: 1%;
     height: 70px;
-    width: 200px;
+    min-width: 200px;
     border: 1px solid white;
 }
 
@@ -51,7 +50,7 @@ span, #fill-in {
 
 #right-side{
     margin: 1rem;
-    width: 40vw;
+    max-width: 40vw;
     min-height: 45vh;
     border: 1px solid white;
     border-radius: 5%; 
@@ -61,11 +60,28 @@ span, #fill-in {
     margin: 2%;
 }
 
+form, #right-side, #form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;  
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
 input[type="button"]{
     cursor: pointer;
     margin: auto;
     display: block;
     border-radius: 1%;
+    margin-bottom: 10px;
     transition: 0.5s;
 }
 
@@ -79,4 +95,37 @@ input[type="button"]:hover{
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+}
+
+#container-message{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    text-align: justify;  
+}
+
+#message{
+    border: 1px solid red;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .offer, div{
+        width: 100%;
+    }
+    #list{
+        width: fit-content;
+        padding: 10px;
+    }
+    #right-side{
+        padding: 10px;
+        width: fit-content;
+    }
+    input{
+        width: 90%;
+    }
 }
